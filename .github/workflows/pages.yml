@@ -2,7 +2,7 @@ name: Build and Deploy Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # 或者你的默认分支
+    branches: ["master"] # 或者你的默认分支
   workflow_dispatch:
 
 permissions:
