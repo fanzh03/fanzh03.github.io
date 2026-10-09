@@ -366,16 +366,241 @@
         </section>
 
         <section class="results">
+            <h2>Selected Examples</h2>
+            <div class="results-intro">
+                <p>Left: <strong>LTX-2.3 (Baseline)</strong> &nbsp;&harr;&nbsp; Right:
+                    <strong class="accent">OmniOPD (Ours)</strong>.
+                    Click a clip to play it with audio.</p>
+            </div>
+            <div class="feat-chips" role="tablist"><button type="button" class="feat-chip is-active" data-filter="all">All</button><button type="button" class="feat-chip" data-filter="dialogue">对话</button><button type="button" class="feat-chip" data-filter="animal">动物</button><button type="button" class="feat-chip" data-filter="cartoon">卡通</button><button type="button" class="feat-chip" data-filter="movie">Movie</button><button type="button" class="feat-chip" data-filter="music">音乐</button></div>
+            <div class="feat-list">
+                <div class="feat-case" data-cat="dialogue">
+                    <div class="feat-label">对话</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/baseline/dialogue_008.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/ours/dialogue_008.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">A static medium shot frames a doctor and a patient sitting across from each other in a clean consultation room. The camera does not move. The doctor maintains a calm posture and says, &quot;Your test…</div>
+                </div>
+                <div class="feat-case" data-cat="dialogue">
+                    <div class="feat-label">对话</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/arena/baseline/022.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/arena/ours/022.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">In a medium shot with cool, muted tones, two men lean against a rough, textured stone wall under diffused daylight. The man on the right, who is Black with short gray hair, wears a light blue shirt…</div>
+                </div>
+                <div class="feat-case" data-cat="animal">
+                    <div class="feat-label">动物</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/baseline/animal_002.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/ours/animal_002.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">A fixed close-up shows two domestic cats sitting opposite each other on a windowsill in soft afternoon light. One is an orange tabby and the other is a gray British Shorthair. The camera remains…</div>
+                </div>
+                <div class="feat-case" data-cat="animal">
+                    <div class="feat-label">动物</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/baseline/animal_003.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/ours/animal_003.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">A stable medium close-up frames two dogs sitting calmly beside each other in a quiet indoor room. A small corgi sits on the left and a black Labrador sits on the right. Both remain in fixed positions…</div>
+                </div>
+                <div class="feat-case" data-cat="cartoon">
+                    <div class="feat-label">卡通</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/paper/baseline/paper_004.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/paper/ours/paper_004.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">SpongeBob and Patrick are sitting on a rock underwater, talking deeply. Patrick looks at Patrick and says clearly: &quot;Knowledge cannot replace friendship, SpongeBob!&quot; with an emotional expression.…</div>
+                </div>
+                <div class="feat-case" data-cat="cartoon">
+                    <div class="feat-label">卡通</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/more_percase/baseline/more_018.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/more_percase/ours/more_018.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">From a slightly low-angle extreme close-up, a female anime character with shoulder-length white hair streaked with blue holds a dark, round object near her mouth. In the dim, atmospheric lighting of…</div>
+                </div>
+                <div class="feat-case" data-cat="cartoon">
+                    <div class="feat-label">卡通</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/baseline/cartoon_003.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/statics/ours/cartoon_003.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">In a bright classic cartoon living room, Mickey Mouse and Donald Duck sit opposite each other in two armchairs. The camera remains fixed in a centered medium two-shot. Both characters stay seated…</div>
+                </div>
+                <div class="feat-case" data-cat="movie">
+                    <div class="feat-label">Movie</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/paper/baseline/paper_003.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/paper/ours/paper_003.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">A medium close-up frames two men facing each other in profile, standing nose-to-nose in a tense, cinematic confrontation within a dimly lit bank. The man on the left, who is older with white hair, a…</div>
+                </div>
+                <div class="feat-case" data-cat="movie">
+                    <div class="feat-label">Movie</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/more_percase/baseline/more_020.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/more_percase/ours/more_020.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">Amidst twisted metal and rubble under a hazy, sunlit sky, five figures stand arranged in a loose semi-circle. Strong backlighting from the upper right casts dramatic golden highlights across their…</div>
+                </div>
+                <div class="feat-case" data-cat="movie">
+                    <div class="feat-label">Movie</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/more_percase/baseline/more_021.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/more_percase/ours/more_021.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">In a medium close-up with a cool, cinematic tone, an East Asian man with short spiky hair and a dark suit jacket over a white shirt stands in side profile, his gaze directed downward. Slightly behind…</div>
+                </div>
+                <div class="feat-case" data-cat="music">
+                    <div class="feat-label">音乐</div>
+                    <div class="feat-grid">
+                        <div class="video-col">
+                            <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/figure/baseline/test_016.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-col">
+                            <span class="video-col-header header-ours">OmniOPD (Ours)</span>
+                            <video controls playsinline preload="metadata">
+                                <source src="static/video/figure/ours/test_016.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="feat-prompt">At night beside a mountain lake, four friends sit around a small campfire beneath a clear sky filled with stars. One person holds an acoustic guitar while the others sit on logs wrapped in blankets.…</div>
+                </div>
+            </div>
+        </section>
+        <script>
+            (function () {
+                var chips = document.querySelectorAll('.feat-chip');
+                var cases = document.querySelectorAll('.feat-case');
+                chips.forEach(function (chip) {
+                    chip.addEventListener('click', function () {
+                        var want = chip.getAttribute('data-filter');
+                        chips.forEach(function (c) { c.classList.toggle('is-active', c === chip); });
+                        cases.forEach(function (el) {
+                            var show = want === 'all' || el.getAttribute('data-cat') === want;
+                            el.classList.toggle('is-hidden', !show);
+                        });
+                    });
+                });
+            })();
+        </script>
+        <section class="results">
             <h2>Qualitative Results</h2>
             <div class="results-intro">
                 <p>Side-by-side comparison: <strong>LTX-2.3 (Baseline)</strong> vs.
-                    <strong style="color:#4169E1;">OmniOPD (Ours)</strong>.
+                    <strong class="accent">OmniOPD (Ours)</strong>.
                     Click a clip to play it with audio. Prompts are abbreviated for display.</p>
             </div>
             <div class="results-content">
                 <div class="result-category">
                     <h3><i class="fas fa-film"></i> Paper Cases</h3>
-                    <p class="category-note">Representative cases used in the paper. &mdash; 5 cases.</p>
+                    <p class="category-note">Representative cases used in the paper. &mdash; 3 cases.</p>
                     <div class="demo-row">
                         <div class="video-comparison">
                             <div class="video-col">
@@ -421,46 +646,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
                                 <video controls playsinline preload="metadata">
-                                    <source src="static/video/paper/baseline/paper_003.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/paper/ours/paper_003.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">A medium close-up frames two men facing each other in profile, standing nose-to-nose in a tense, cinematic confrontation within a dimly lit bank. The man on the left, who is older with white hair, a balding head, and glasses, stands rigidly in a dark suit and…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/paper/baseline/paper_004.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/paper/ours/paper_004.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">SpongeBob and Patrick are sitting on a rock underwater, talking deeply. Patrick looks at Patrick and says clearly: &quot;Knowledge cannot replace friendship, SpongeBob!&quot; with an emotional expression. SpongeBob smiles warmly and responds: &quot;I agree, but I also…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
                                     <source src="static/video/paper/baseline/paper_005.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -479,7 +664,7 @@
                 </div>
                 <div class="result-category">
                     <h3><i class="fas fa-video"></i> More Cases — Per-Case Prompts</h3>
-                    <p class="category-note">Additional per-case prompts. &mdash; 20 cases.</p>
+                    <p class="category-note">Additional per-case prompts. &mdash; 17 cases.</p>
                     <div class="demo-row">
                         <div class="video-comparison">
                             <div class="video-col">
@@ -785,26 +970,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
                                 <video controls playsinline preload="metadata">
-                                    <source src="static/video/more_percase/baseline/more_018.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/more_percase/ours/more_018.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">From a slightly low-angle extreme close-up, a female anime character with shoulder-length white hair streaked with blue holds a dark, round object near her mouth. In the dim, atmospheric lighting of what appears to be a library, the object—resembling a small…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
                                     <source src="static/video/more_percase/baseline/more_019.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -817,46 +982,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
                                 <div class="prompt-col">In a dense, misty forest rendered with high-detail textures, a character with braided hair and armor-like clothing crouches beside a softly glowing blue object, viewed from a slightly elevated side-back angle. The game&#x27;s user interface overlays the scene: the…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/more_percase/baseline/more_020.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/more_percase/ours/more_020.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">Amidst twisted metal and rubble under a hazy, sunlit sky, five figures stand arranged in a loose semi-circle. Strong backlighting from the upper right casts dramatic golden highlights across their forms, while a slightly low camera angle looks up at the…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/more_percase/baseline/more_021.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/more_percase/ours/more_021.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">In a medium close-up with a cool, cinematic tone, an East Asian man with short spiky hair and a dark suit jacket over a white shirt stands in side profile, his gaze directed downward. Slightly behind him and to the right, a second man with longer hair and…</div>
                             </div>
                         </div>
                     </div>
@@ -883,7 +1008,7 @@
                 </div>
                 <div class="result-category">
                     <h3><i class="fas fa-video"></i> More Cases — Figure Prompts</h3>
-                    <p class="category-note">Cinematic / animation prompts. &mdash; 17 cases.</p>
+                    <p class="category-note">Cinematic / animation prompts. &mdash; 16 cases.</p>
                     <div class="demo-row">
                         <div class="video-comparison">
                             <div class="video-col">
@@ -1169,26 +1294,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
                                 <video controls playsinline preload="metadata">
-                                    <source src="static/video/figure/baseline/test_016.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/figure/ours/test_016.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">At night beside a mountain lake, four friends sit around a small campfire beneath a clear sky filled with stars. One person holds an acoustic guitar while the others sit on logs wrapped in blankets. The camera begins with a close-up of burning wood and…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
                                     <source src="static/video/figure/baseline/test_019.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -1227,7 +1332,7 @@
                 </div>
                 <div class="result-category">
                     <h3><i class="fas fa-video"></i> More Cases — Static Shots</h3>
-                    <p class="category-note">Fixed-camera dialogue and scene prompts. &mdash; 19 cases.</p>
+                    <p class="category-note">Fixed-camera dialogue and scene prompts. &mdash; 15 cases.</p>
                     <div class="demo-row">
                         <div class="video-comparison">
                             <div class="video-col">
@@ -1305,26 +1410,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
                                 <div class="prompt-col">In a steady medium two-shot, a man and a woman sit across from each other at a simple restaurant table. The camera remains fixed at eye level. Warm lighting softly illuminates their faces while the background is dark and unobtrusive. The woman looks at the…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/baseline/dialogue_008.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/ours/dialogue_008.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">A static medium shot frames a doctor and a patient sitting across from each other in a clean consultation room. The camera does not move. The doctor maintains a calm posture and says, &quot;Your test results look much better this time.&quot; The patient relaxes…</div>
                             </div>
                         </div>
                     </div>
@@ -1433,46 +1518,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
                                 <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/baseline/animal_002.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/ours/animal_002.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">A fixed close-up shows two domestic cats sitting opposite each other on a windowsill in soft afternoon light. One is an orange tabby and the other is a gray British Shorthair. The camera remains perfectly still while both cats maintain stable seated postures.…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/baseline/animal_003.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/ours/animal_003.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">A stable medium close-up frames two dogs sitting calmly beside each other in a quiet indoor room. A small corgi sits on the left and a black Labrador sits on the right. Both remain in fixed positions while the camera stays completely still. The corgi looks…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
                                     <source src="static/video/statics/baseline/cartoon_002.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -1485,26 +1530,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
                                 <div class="prompt-col">SpongeBob and Patrick sit side by side on a rock outside SpongeBob&#x27;s pineapple house in a colorful underwater setting. The camera is locked in a stable medium two-shot with no movement. Both characters remain seated and only make subtle facial and head…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/baseline/cartoon_003.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/statics/ours/cartoon_003.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">In a bright classic cartoon living room, Mickey Mouse and Donald Duck sit opposite each other in two armchairs. The camera remains fixed in a centered medium two-shot. Both characters stay seated throughout the scene with only subtle hand gestures and facial…</div>
                             </div>
                         </div>
                     </div>
@@ -1611,7 +1636,7 @@
                 </div>
                 <div class="result-category">
                     <h3><i class="fas fa-video"></i> More Cases — Arena Prompts</h3>
-                    <p class="category-note">Prompts from the arena-style evaluation set. &mdash; 17 cases.</p>
+                    <p class="category-note">Prompts from the arena-style evaluation set. &mdash; 16 cases.</p>
                     <div class="demo-row">
                         <div class="video-comparison">
                             <div class="video-col">
@@ -1877,26 +1902,6 @@
                             <div class="video-col">
                                 <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
                                 <video controls playsinline preload="metadata">
-                                    <source src="static/video/arena/baseline/022.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-ours">OmniOPD (Ours)</span>
-                                <video controls playsinline preload="metadata">
-                                    <source src="static/video/arena/ours/022.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="video-col">
-                                <span class="video-col-header header-prompt">Prompt<span class="prompt-abbr">(Abbreviated)</span></span>
-                                <div class="prompt-col">In a medium shot with cool, muted tones, two men lean against a rough, textured stone wall under diffused daylight. The man on the right, who is Black with short gray hair, wears a light blue shirt with the number tag “302” and dark blue jeans; he clasps his…</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-row">
-                        <div class="video-comparison">
-                            <div class="video-col">
-                                <span class="video-col-header header-baseline">LTX-2.3 (Baseline)</span>
-                                <video controls playsinline preload="metadata">
                                     <source src="static/video/arena/baseline/014.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -1955,6 +1960,7 @@
                 </div>
             </div>
         </section>
+
 
 
         <!-- ============================= CITATION ============================= -->

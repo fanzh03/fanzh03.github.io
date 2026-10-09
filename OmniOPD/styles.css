@@ -639,6 +639,121 @@ h4 {
     background: var(--violet);
 }
 
+/* ------------------------------------------------ featured example strip */
+
+/* category filter chips */
+.feat-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin: 4px 0 26px;
+}
+
+.feat-chip {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--violet-deep);
+    background: var(--violet-ghost);
+    border: 1.5px solid var(--panel-border);
+    border-radius: 999px;
+    padding: 7px 18px;
+    cursor: pointer;
+    transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.feat-chip:hover {
+    background: var(--fill-lilac);
+    border-color: var(--violet);
+    transform: translateY(-1px);
+}
+
+.feat-chip.is-active {
+    background: var(--violet-deep);
+    border-color: var(--violet-deep);
+    color: #fff;
+}
+
+.feat-list {
+    display: grid;
+    gap: 22px;
+}
+
+.feat-case {
+    background: var(--panel-bg);
+    border: 1.5px solid var(--panel-border);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feat-case:hover {
+    border-color: var(--violet);
+    box-shadow: 0 6px 18px rgba(124, 92, 191, 0.13);
+}
+
+.feat-case.is-hidden {
+    display: none;
+}
+
+.feat-label {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--violet-deep);
+    background: var(--fill-lilac);
+    border: 1.5px solid var(--panel-border);
+    border-radius: 999px;
+    padding: 3px 11px;
+    margin-bottom: 12px;
+}
+
+.feat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.feat-grid .video-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feat-grid .video-col video {
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid var(--panel-border);
+    background: #000;
+    display: block;
+}
+
+/* prompt sits under the pair, full width */
+.feat-prompt {
+    margin-top: 12px;
+    padding: 12px 15px;
+    background: var(--fill-lilac);
+    border: 1.5px solid var(--panel-border);
+    border-radius: 10px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    line-height: 1.62;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .feat-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
 /* -------------------------------------------------------- footer */
 
 footer {
