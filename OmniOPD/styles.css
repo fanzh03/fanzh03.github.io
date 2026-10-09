@@ -191,6 +191,7 @@ section {
 /* every panel-shaped section shares the figure's outlined-box look */
 .teaser,
 .abstract,
+.analysis,
 .method-overview,
 .method-details,
 .results,
@@ -271,6 +272,7 @@ h4 {
 /* -------------------------------------------------------------- prose */
 
 .abstract p,
+.analysis p,
 .overview-text p,
 .method-section p,
 .step-content p,
@@ -713,6 +715,7 @@ footer a:hover {
 
     .teaser,
     .abstract,
+    .analysis,
     .method-overview,
     .method-details,
     .results,
