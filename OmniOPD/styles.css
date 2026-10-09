@@ -441,6 +441,59 @@ h4 {
     overflow-x: auto;
 }
 
+/* three-up summary cards under a figure (accent bar on the left edge) */
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.feature-card {
+    background: var(--panel-bg);
+    border: 1.5px solid var(--panel-border);
+    border-left: 4px solid var(--violet);
+    border-radius: var(--radius-sm);
+    padding: 18px 20px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--violet-soft);
+}
+
+/* a colour ramp across the row, like the reference cards */
+.feature-cards .feature-card:nth-child(1) { border-left-color: #d1509b; }
+.feature-cards .feature-card:nth-child(2) { border-left-color: var(--violet); }
+.feature-cards .feature-card:nth-child(3) { border-left-color: var(--blue); }
+.feature-cards .feature-card:nth-child(1):hover { border-left-color: #b93c85; }
+.feature-cards .feature-card:nth-child(2):hover { border-left-color: var(--violet-deep); }
+.feature-cards .feature-card:nth-child(3):hover { border-left-color: #3a5cb8; }
+
+.feature-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--violet-deep);
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .feature-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
 /* -------------------------------------------------------- the table */
 
 .table-container {
