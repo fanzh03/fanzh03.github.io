@@ -173,12 +173,13 @@ body {
     transform: translateY(-1px);
 }
 
-/* inline brand svg (Hugging Face logo) aligns with the icon-font glyphs */
-.hf-logo {
-    width: 1.05em;
-    height: 1.05em;
+/* Hugging Face emoji sits on the button baseline like the icon-font glyphs */
+.hf-emoji {
+    font-size: 1.05em;
+    line-height: 1;
     flex: 0 0 auto;
-    fill: currentColor;
+    /* keep the emoji in its own colour rather than inheriting the violet text */
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
 }
 
 /* ---------------------------------------------------------- sections */
