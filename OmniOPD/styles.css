@@ -173,6 +173,14 @@ body {
     transform: translateY(-1px);
 }
 
+/* inline brand svg (Hugging Face logo) aligns with the icon-font glyphs */
+.hf-logo {
+    width: 1.05em;
+    height: 1.05em;
+    flex: 0 0 auto;
+    fill: currentColor;
+}
+
 /* ---------------------------------------------------------- sections */
 
 section {
