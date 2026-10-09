@@ -190,7 +190,7 @@
         <section class="teaser">
             <div class="method-figure">
                 <img src="static/images/fig_teaser.webp" alt="Figure 1" class="responsive-img">
-                <p class="caption"><strong>Figure 1:</strong> FIGURE1_CAPTION</p>
+                <p class="caption"><strong>Figure 1:</strong> Qualitative examples of joint audio-video generation by OmniOPD. These examples demonstrate improvements in audio diversity, voice–character alignment in multi-character scenes, visual aesthetics, and audio fidelity.</p>
             </div>
         </section>
 
@@ -225,7 +225,7 @@
             <h2>Motivation</h2>
             <div class="method-figure">
                 <img src="static/images/fig_motivation.webp" alt="Motivation" class="responsive-img">
-                <p class="caption"><strong>Figure 2:</strong> FIGURE2_CAPTION</p>
+                <p class="caption"><strong>Figure 2:</strong> <strong>Motivation analysis of audio-video joint learning.</strong> (a) Audio and video exhibit a substantial token imbalance, leading to training instability. (b) Optimization guided solely by audio rewards is unstable and can degrade video quality. (c)(d) Audio performance improves early during denoising, but audio refinement remains less stable than video refinement.</p>
             </div>
             <div class="feature-cards">
                 <div class="feature-card">
@@ -249,7 +249,7 @@
             <h2>A comprehensive analysis of audio-video coupling</h2>
             <div class="method-figure">
                 <img src="static/images/fig_analysis.webp" alt="Audio-video coupling analysis" class="responsive-img">
-                <p class="caption"><strong>Figure 3:</strong> FIGURE3_CAPTION</p>
+                <p class="caption"><strong>Figure 3:</strong> <strong>A comprehensive analysis of audio-video coupling during optimization.</strong> The top row compares optimization with video-only, audio-only, and joint rewards. The middle row compares three joint-reward configurations, including increased audio reward weights. The bottom row compares audio-only optimization with two Cascade variants that optimize video first and then audio. (1) Audio-only reward optimization is unstable and can degrade video quality; increasing audio reward weights fails to resolve these conflicts and can further destabilize training.(2) Joint-reward optimization yields limited gains due to conflicts among reward objectives across modalities. (3) Sequential video-to-audio optimization stabilizes training, suggesting that cleaner and more stable video context is important for audio learning.</p>
             </div>
             <div class="feature-cards">
                 <div class="feature-card">
@@ -274,7 +274,7 @@
                 <div class="method-figure">
                     <img src="static/images/fig_pipeline.webp" alt="OmniOPD pipeline" class="responsive-img">
                     <p class="caption">
-                        <strong>Figure 4:</strong> FIGURE4_CAPTION
+                        <strong>Figure 4:</strong> <strong>Overview of OmniOPD.</strong> (A) On-policy modality-wise distillation transfers knowledge from frozen video and audio teachers to a joint audio-video student using student-generated rollouts. (B) Privileged visual guidance provides the audio teacher with cleaner video context while sharing the same audio state with the student, yielding more informative audio supervision. (C) Multi-noise sampling expands audio supervision across noise realizations and denoising steps, while state-reliability weighting controls the contribution of unreliable learning signals.
                     </p>
                 </div>
                 <div class="overview-text">
