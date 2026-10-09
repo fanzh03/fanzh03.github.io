@@ -530,8 +530,21 @@ h4 {
     border-bottom: 1.5px solid var(--panel-border-strong);
 }
 
-.results-table th:nth-child(4) { border-right: 6px solid var(--violet-ghost); }
-.results-table th:nth-child(5) { border-left: 6px solid var(--violet-ghost); }
+.results-table tbody td:nth-child(4),
+.results-table tbody td:nth-child(8),
+.results-table tbody td:nth-child(10) {
+    border-left: 6px solid var(--violet-ghost);
+}
+
+.results-table .group-row td {
+    text-align: left;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--ink-faint);
+    background: var(--violet-ghost);
+    padding-left: 16px;
+    border-left: none;
+}
 
 .results-table tbody tr {
     transition: background-color 0.15s ease;

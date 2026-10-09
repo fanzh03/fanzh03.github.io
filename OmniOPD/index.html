@@ -304,66 +304,57 @@
         <section class="results">
             <h2>Performance</h2>
             <div class="results-intro">
-                <p>Benchmark comparison. Best results in <strong style="color:#4169E1;">blue</strong>, second-best
-                    <span style="text-decoration:underline;">underlined</span>.
-                    (&#8593;: higher is better; &#8595;: lower is better).</p>
+                <p>Quantitative comparison on JavisBench. Higher is better for &#8593; metrics, and lower is better
+                    for &#8595; metrics. Best results are <strong class="accent">highlighted</strong>, and second-best
+                    results are <span style="text-decoration:underline;">underlined</span>.</p>
             </div>
             <div class="table-container">
                 <table class="results-table">
                     <thead>
-                        <!-- Group header row (colspan) + metric name row -->
                         <tr>
-                            <th rowspan="2">Method</th>
-                            <th rowspan="2">Backbone</th>
-                            <th colspan="2">Group A</th>
-                            <th colspan="2">Group B</th>
+                            <th rowspan="2">Model</th>
+                            <th colspan="2">AV-Quality</th>
+                            <th colspan="4">Text-Consistency</th>
+                            <th colspan="2">AV-Consistency</th>
+                            <th colspan="2">AV-Synchrony</th>
                         </tr>
                         <tr>
-                            <th>Metric&nbsp;&#8593;</th>
-                            <th>Metric&nbsp;&#8593;</th>
-                            <th>Metric&nbsp;&#8593;</th>
-                            <th>Metric&nbsp;&#8593;</th>
+                            <th>VQ&#8593;</th>
+                            <th>AQ&#8593;</th>
+                            <th>TV-IB&#8593;</th>
+                            <th>TA-IB&#8593;</th>
+                            <th>CLIP&#8593;</th>
+                            <th>CLAP&#8593;</th>
+                            <th>AV-IB&#8593;</th>
+                            <th>AVHScore&#8593;</th>
+                            <th>JavisScore&#8593;</th>
+                            <th>DeSync&#8595;</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="separator-row"><td colspan="6"></td></tr>
-                        <!-- Category sub-header row: change colspan to match total column count -->
-                        <tr style="background:#f9fafb;"><td colspan="6" style="text-align:left;font-weight:600;font-style:italic;color:#718096;padding-left:16px;">CATEGORY_ONE</td></tr>
-                        <tr>
-                            <td>BASELINE_A</td><td>SIZE</td>
-                            <td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td>
-                        </tr>
-                        <tr>
-                            <td>BASELINE_B</td><td>SIZE</td>
-                            <td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td>
-                        </tr>
-
-                        <tr class="separator-row"><td colspan="6"></td></tr>
-                        <tr style="background:#f9fafb;"><td colspan="6" style="text-align:left;font-weight:600;font-style:italic;color:#718096;padding-left:16px;">CATEGORY_TWO</td></tr>
-                        <tr>
-                            <td>BASELINE_C</td><td>SIZE</td>
-                            <td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td>
-                        </tr>
-                        <!-- Mark best with class="best", second-best with style="text-decoration:underline;" -->
-                        <tr class="our-method" style="font-weight:600;">
-                            <td><strong>Ours</strong></td><td>SIZE</td>
-                            <td class="best">0.00</td><td class="best">0.00</td><td class="best">0.00</td><td class="best">0.00</td>
-                        </tr>
-                        <!-- Optional delta row -->
-                        <tr style="font-style:italic;">
-                            <td style="color:#999;"><em>Ours &Delta;</em></td><td style="color:#999;">--</td>
-                            <td style="color:#2e7d32;">+0.00</td><td style="color:#2e7d32;">+0.00</td>
-                            <td style="color:#2e7d32;">+0.00</td><td style="color:#2e7d32;">+0.00</td>
-                        </tr>
+                        <tr class="separator-row"><td colspan="11"></td></tr>
+                        <tr class="group-row"><td colspan="11">T2A+A2V</td></tr>
+                        <tr><td>TempoTkn</td><td>--</td><td>--</td><td>0.084</td><td>--</td><td>0.205</td><td>--</td><td>0.139</td><td>0.122</td><td>0.103</td><td>1.532</td></tr>
+                        <tr><td>TPoS</td><td>--</td><td>--</td><td>0.201</td><td>--</td><td>0.229</td><td>--</td><td>0.124</td><td>0.129</td><td>0.095</td><td>1.493</td></tr>
+                        <tr class="separator-row"><td colspan="11"></td></tr>
+                        <tr class="group-row"><td colspan="11">T2V+V2A</td></tr>
+                        <tr><td>ReWaS</td><td>--</td><td>--</td><td>--</td><td>0.123</td><td>--</td><td>0.280</td><td>0.110</td><td>0.104</td><td>0.079</td><td>1.071</td></tr>
+                        <tr><td>See&amp;Hear</td><td>--</td><td>--</td><td>--</td><td>0.129</td><td>--</td><td>0.263</td><td>0.160</td><td>0.143</td><td>0.112</td><td>1.099</td></tr>
+                        <tr><td>FoleyCrafter</td><td>--</td><td>--</td><td>--</td><td>0.149</td><td>--</td><td>0.383</td><td>0.193</td><td>0.186</td><td>0.151</td><td>0.952</td></tr>
+                        <tr><td>MMAudio</td><td>--</td><td>--</td><td>--</td><td>0.160</td><td>--</td><td>0.407</td><td>0.198</td><td>0.182</td><td>0.150</td><td>0.849</td></tr>
+                        <tr class="separator-row"><td colspan="11"></td></tr>
+                        <tr class="group-row"><td colspan="11">T2AV</td></tr>
+                        <tr><td>JavisDiT</td><td>1.291</td><td>4.478</td><td>0.263</td><td>0.143</td><td>0.302</td><td>0.391</td><td>0.197</td><td>0.179</td><td>0.154</td><td>1.039</td></tr>
+                        <tr><td>UniVerse-1</td><td>1.357</td><td>4.839</td><td>0.272</td><td>0.111</td><td>0.309</td><td>0.245</td><td>0.104</td><td>0.098</td><td>0.077</td><td>0.929</td></tr>
+                        <tr><td>JavisDiT++</td><td>1.462</td><td>5.049</td><td class="best">0.282</td><td>0.164</td><td class="best">0.316</td><td>0.424</td><td>0.198</td><td>0.184</td><td>0.159</td><td>0.832</td></tr>
+                        <tr><td>LTX-2.3</td><td>2.714</td><td>5.252</td><td>0.279</td><td>0.178</td><td>0.308</td><td>0.429</td><td>0.256</td><td>0.251</td><td>0.222</td><td>0.584</td></tr>
+                        <tr><td>LTX-2.3+OmniNFT</td><td>3.216</td><td>5.564</td><td>0.274</td><td style="text-decoration:underline;">0.183</td><td>0.309</td><td>0.442</td><td>0.268</td><td>0.261</td><td>0.236</td><td>0.547</td></tr>
+                        <tr class="separator-row"><td colspan="11"></td></tr>
+                        <tr><td>Video-Teacher</td><td>3.121</td><td>5.216</td><td>0.276</td><td>0.182</td><td>0.304</td><td>0.446</td><td style="text-decoration:underline;">0.275</td><td style="text-decoration:underline;">0.269</td><td style="text-decoration:underline;">0.238</td><td>0.465</td></tr>
+                        <tr><td>Audio-Teacher</td><td>2.929</td><td>5.576</td><td>0.276</td><td>0.184</td><td>0.307</td><td>0.470</td><td class="best">0.282</td><td class="best">0.279</td><td class="best">0.251</td><td class="best">0.448</td></tr>
+                        <tr class="our-method"><td><strong>OmniOPD (Ours)</strong></td><td class="best">3.347</td><td style="text-decoration:underline;">5.449</td><td>0.275</td><td class="best">0.192</td><td style="text-decoration:underline;">0.310</td><td style="text-decoration:underline;">0.447</td><td>0.262</td><td>0.258</td><td>0.232</td><td style="text-decoration:underline;">0.457</td></tr>
                     </tbody>
                 </table>
-            </div>
-            <div class="table-notes">
-                <p>Table 1.</p>
-                <ul>
-                    <li>TABLE_NOTE_ONE</li>
-                    <li>TABLE_NOTE_TWO</li>
-                </ul>
             </div>
         </section>
 
