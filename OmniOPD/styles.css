@@ -694,7 +694,8 @@ h4 {
     box-shadow: 0 6px 18px rgba(124, 92, 191, 0.13);
 }
 
-.feat-case.is-hidden {
+.feat-case.is-hidden,
+.demo-row.is-hidden {
     display: none;
 }
 
