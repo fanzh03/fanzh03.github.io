@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TODO: replace with your paper title -->
-    <title>PROJECT_NAME: PROJECT_SUBTITLE</title>
+    <title>OmniOPD: Stable On-Policy Distillation for Joint Audio-Video Generation</title>
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
@@ -150,7 +150,8 @@
         <header class="hero">
             <div class="hero-content">
                 <!-- TODO: title (wrap the short name in <span class="title-omni">) -->
-                <h1 class="title"><span class="title-omni">PROJECT_NAME</span>: PROJECT_SUBTITLE</h1>
+                <h1 class="title"><span class="title-omni">OmniOPD</span>: Stable On-Policy Distillation for Joint
+                    Audio-Video Generation</h1>
 
                 <!-- TODO: authors (note: the "<sup>1</sup>" numbers must match the affiliations line) -->
                 <div class="authors">
@@ -197,11 +198,24 @@
         <section class="abstract">
             <h2>Abstract</h2>
             <p>
-                ABSTRACT_PARAGRAPH_ONE. Use <strong>bold</strong>, <em>italics</em>, and inline math
-                like $x_t = \alpha_t x_0 + \sigma_t \epsilon$ freely.
+                Reinforcement learning (RL) elevates joint audio-video generation, but optimizing heterogeneous,
+                modality-specific audio and video rewards often introduces cross-modal interference. On-policy
+                distillation (OPD) alleviates this issue by transferring the capabilities of specialized audio and
+                video RL teachers into a single student model. However, a significant imbalance in cross-modal token
+                counts leaves audio with sparse supervision, causing unstable distillation. We observe that naively
+                increasing the audio loss weight fails to solve this problem since audio learning relies heavily on
+                visual context, indicating richer visual cues are crucial to offset sparse audio signals.
             </p>
             <p>
-                ABSTRACT_PARAGRAPH_TWO.
+                To address this, we propose <strong>OmniOPD</strong>, a modality-wise on-policy distillation framework
+                designed for balanced and stable audio-video generation. First, we construct privileged visual
+                information using asymmetric noise scheduling, allowing the audio teacher to generate more informative
+                targets from cleaner video context. Second, we introduce grouped multi-noise sampling to expand audio
+                supervision coverage and stabilize training. Third, we introduce timestep-wise importance weighting
+                based on teacher-student transition divergence, preserving reliable supervision while down-weighting
+                unreliable learning signals, to stabilize fluctuations in audio learning. Evaluated on JavisBench and
+                VBench demonstrate OmniOPD preserves audio quality while significantly enhancing video generation,
+                achieving effective joint distillation.
             </p>
         </section>
 
@@ -1948,7 +1962,7 @@
             <h2>Citation</h2>
             <div class="bibtex-container">
 <pre><code>@article{key2026project,
-  title={PROJECT_NAME: PROJECT_SUBTITLE},
+  title={OmniOPD: Stable On-Policy Distillation for Joint Audio-Video Generation},
   author={LAST, FIRST and LAST, FIRST},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2026}
