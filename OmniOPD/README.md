@@ -1,4 +1,4 @@
-# Project Page Scaffold (OmniNFT / Nerfies style)
+# Project Page Scaffold 
 
 A ready-to-fill project page modeled on `https://zghhui.github.io/OmniNFT/`.
 
