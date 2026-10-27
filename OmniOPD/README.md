@@ -1,6 +1,5 @@
 # Project Page Scaffold 
-
-A ready-to-fill project page modeled on `https://zghhui.github.io/OmniNFT/`.
+ 
 
 ## Files
 
